@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+  <header class="bg-[#424242]">
+    <div class="container mx-auto">
+      <div class="py-[50px] flex flex-row justify-evenly items-center">
+        <div><img src="./assets/BMICLogo.png" alt="" class="h-[100px] lg:h-[150px]"/></div>
+
+        <div class="">
+          <form action="" class="flex flex-col text-white">
+            <label for="height" class="lg:text-[18px] bg-[#424242]">身高 cm</label>
+            <input name="height" id="height" type="text" placeholder="請輸入身高"
+              class="bg-[#424242] lg:text-[24px] text-white pl-3 border-2 rounded-md border-white outline-none" />
+            <label for="weight" class="lg:text-[18px] mt-[20px]">體重 kg</label>
+            <input type="text" name="weight" id="weight" placeholder="請輸入體重"
+              class="bg-[#424242] lg:text-[24px] text-white pl-3 border-2 rounded-md border-white outline-none" />
+          </form>
+        </div>
+
+        <div id="result">
+          <button type="button" id="resultBtn">
+            <div
+              class="w-[100px] h-[100px] rounded-full bg-[#FFD366] hover:shadow-[0_1px_6px_3px] hover:shadow-amber-200/50 active:bg-[#DEA821] text-center text-[25px] align-middle py-[35%]">
+              看結果
+            </div>
+          </button>
+
+          <div id='resultList'>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="my-[50px]">
+    <div class="container mx-auto">
+      <div class="text-center text-[30px]">BMI紀錄<button type="button" class="absolute right-5 text-[15px] text-white border-2 border-white bg-black rounded-full p-1 opacity-50 hover:opacity-100" id="clearBtn">刪除全部紀錄</button></div>
+      
+      <div id="bmiList" class="mt-[30px] border-t-2 border-black pt-5 border-dashed">
+        
+      </div>
+    </div>
+  </main>
+  <div class="h-[210px] xl:h-[480px]">
+
+  </div>
+  <footer class="bg-[#FFD366]  bottom-0 left-0 right-0">
+    <div class="container mx-auto py-5 flex justify-center">
+      <img src="./assets/BMICLogo-2.png" alt="" class="text-[#FFD366]" />
+    </div>
+  </footer>
+  <script src="./js/bmi.js"></script>
+</body>
+
+</html>
